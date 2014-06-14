@@ -1,0 +1,29 @@
+.blocks, .blocks-2, .blocks-left, .blocks-right  {
+	margin: 20px;
+	padding: 10px;
+	background-color: #eee;
+}
+.blocks div, .blocks-2 div, .blocks-left div, .blocks-right div { 
+	background-color: #ddd;
+	width: 400px;
+	margin: 0 auto;
+	padding: 20px;
+	line-height: 1.5em;
+	-webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
+	-moz-transition: -moz-transform 0.5s, opacity 0.5s;
+	transition: transform 0.5s, opacity 0.5s;
+}
+
+.block-left {
+	opacity: 0;
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.block-right {
+	opacity: 0;
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
