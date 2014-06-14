@@ -1,2 +1,2 @@
-jquery.inview
+jQuery inView Plugin
 =============
