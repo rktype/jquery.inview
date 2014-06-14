@@ -1,3 +1,9 @@
+/*!
+ * jQuery inView plugin
+ * 
+ * Copyright Mirko Renzetti
+ */
+
 (function($) {
 	$.fn.inview = function(options) {
 
