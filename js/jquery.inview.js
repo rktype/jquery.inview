@@ -62,7 +62,7 @@
 						if(typeof options.onEnter === 'function')
 							options.onEnter(block.obj);
 
-					} else if (block.inView !== false && height <= 0) {
+					} else if (block.inView !== false && height <= 0 && block.obj.data('class-out')) {
 						blockList[i].inView = false;
 						block.obj.addClass(block.obj.data('class-out'));
 						block.obj.removeClass(block.obj.data('class-in'));
