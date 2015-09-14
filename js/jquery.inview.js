@@ -62,10 +62,12 @@
 						if(typeof options.onEnter === 'function')
 							options.onEnter(block.obj);
 
-					} else if (block.inView !== false && height <= 0 && (block.obj.data('class-out') || !block.obj.data('hold'))) {
+					} else if (block.inView !== false && height <= 0) {
 						blockList[i].inView = false;
-						block.obj.addClass(block.obj.data('class-out'));
-						block.obj.removeClass(block.obj.data('class-in'));
+						if(block.obj.data('class-out') || !block.obj.data('hold')){
+							block.obj.addClass(block.obj.data('class-out'));
+							block.obj.removeClass(block.obj.data('class-in'));
+						}						
 						if(typeof options.onLeave === 'function')
 							options.onLeave(block.obj);
 
